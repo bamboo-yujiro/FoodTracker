@@ -98,7 +98,6 @@
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="c1M-au-DFR" appends="YES" id="GCf-EZ-75g"/>
-                                            <outletCollection property="gestureRecognizers" destination="c1M-au-DFR" appends="YES" id="epE-xw-PDt"/>
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-JB-EbP" customClass="RatingControl" customModule="Food_Tracker" customModuleProvider="target">
@@ -144,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="tlf-hw-FjS" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="c1M-au-DFR">
+                <tapGestureRecognizer delaysTouchesBegan="YES" id="c1M-au-DFR">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="XzE-YS-Pqa"/>
                     </connections>
